@@ -2,43 +2,77 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>موقعي الأول - توقعات المباريات</title>
+<title>GoalToday - توقعات المباريات</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #0f172a;
+    font-family: Arial;
+    background: #0b1220;
     color: white;
-    text-align: center;
 }
 
+/* الهيدر */
 header {
-    background: #16a34a;
+    background: linear-gradient(90deg, #16a34a, #22c55e);
     padding: 20px;
-    font-size: 22px;
+    text-align: center;
+    font-size: 24px;
     font-weight: bold;
 }
 
+/* المحتوى */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* بطاقة المباراة */
 .card {
     background: #1f2937;
-    margin: 15px;
+    margin: 15px 0;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: #273244;
 }
 
 h2 {
     color: #22c55e;
 }
 
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #2563eb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* زر */
 .btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 12px;
+    padding: 8px 14px;
     background: #16a34a;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+/* فوتر */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #111827;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -46,29 +80,37 @@ h2 {
 <body>
 
 <header>
-🏆 موقعي الأول - توقعات المباريات
+🏆 GoalToday - توقعات وتحليلات المباريات
 </header>
+
+<div class="container">
 
 <div class="card">
 <h2>إنجلترا vs غانا</h2>
 <p>🔮 التوقع: 2 - 0 لإنجلترا</p>
-<p>📊 فرصة الفوز: 70%</p>
-<a class="btn" href="#">التفاصيل</a>
+<span class="badge">احتمال الفوز: 70%</span><br>
+<a class="btn" href="#">تفاصيل المباراة</a>
 </div>
 
 <div class="card">
 <h2>فرنسا vs السنغال</h2>
 <p>🔮 التوقع: 2 - 1 لفرنسا</p>
-<p>📊 فرصة الفوز: 65%</p>
-<a class="btn" href="#">التفاصيل</a>
+<span class="badge">احتمال الفوز: 65%</span><br>
+<a class="btn" href="#">تفاصيل المباراة</a>
 </div>
 
 <div class="card">
 <h2>البرازيل vs سويسرا</h2>
 <p>🔮 التوقع: 3 - 1 للبرازيل</p>
-<p>📊 فرصة الفوز: 75%</p>
-<a class="btn" href="#">التفاصيل</a>
+<span class="badge">احتمال الفوز: 75%</span><br>
+<a class="btn" href="#">تفاصيل المباراة</a>
 </div>
+
+</div>
+
+<footer>
+© 2026 GoalToday - جميع الحقوق محفوظة
+</footer>
 
 </body>
 </html>
